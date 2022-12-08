@@ -13,12 +13,16 @@ class SuperHero:
                 f'catchphrase is {self.catchphrase}\n'
     def __len__(self):
         return len(self)
+    def Hero(self):
+        print(self.name, self.nickname, self.catchphrase, self.health_points, self.catchphrase)
 
 s = SuperHero('Superman', 'super', 'power','never dead', 'cathing')
-Hero = SuperHero('Spiderman', 'spider', 'power','jumping', 'cathing')
+
 print(s.name)
 print()
 print(s.health_points *2)
 print(len(s.catchphrase))
 print(s)
-print(Hero)
+
+h = SuperHero('Spiderman', 'spider', 'power','jumping', 'cathing')
+h.Hero()
