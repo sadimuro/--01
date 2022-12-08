@@ -11,8 +11,14 @@ class SuperHero:
                 f'superpower is {self.superpower}\n'\
                 f'health_points are {self.health_points}\n'\
                 f'catchphrase is {self.catchphrase}\n'
+    def __len__(self):
+        return len(self)
 
-
-superhero_1 = SuperHero('Superman', 'super', 'power','never dead', 'cathing')
-print(superhero_1)
+s = SuperHero('Superman', 'super', 'power','never dead', 'cathing')
+Hero = SuperHero('Spiderman', 'spider', 'power','jumping', 'cathing')
+print(s.name)
 print()
+print(s.health_points *2)
+print(len(s.catchphrase))
+print(s)
+print(Hero)
